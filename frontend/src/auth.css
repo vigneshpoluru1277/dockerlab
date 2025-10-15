@@ -1,0 +1,55 @@
+:root{
+  --bg:#ffffff;
+  --card:#ffffff;
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --success:#10b981;
+  --border: rgba(37,99,235,0.12);
+}
+
+.auth-wrapper{ padding:2rem; display:flex; justify-content:center }
+
+.auth-container{
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:center;
+  min-height:60vh;
+}
+
+.auth-card{
+  background: #fff;
+  border: 1px solid var(--border);
+  padding:2rem;
+  border-radius:12px;
+  width:420px;
+  box-shadow: 0 6px 20px rgba(15,23,42,0.06);
+}
+
+.auth-card h2{ margin:0 0 1rem 0; color:var(--accent); }
+
+.auth-field{ display:flex; flex-direction:column; gap:0.5rem; margin-bottom:0.75rem; }
+.auth-field input, .auth-field select{
+  padding:0.6rem 0.8rem; border-radius:8px; border:1px solid rgba(15,23,42,0.06);
+  background:transparent; color:inherit; font-size:0.95rem;
+}
+
+.auth-actions{ display:flex; gap:0.5rem; justify-content:flex-end; margin-top:1rem }
+.auth-actions button{ background:var(--accent); color:white; border:none; padding:0.6rem 1rem }
+.auth-actions button.secondary{ background:transparent; border:1px solid var(--border); color:var(--accent) }
+
+.brand{ text-align:left; margin-bottom:0; }
+.brand h1{ margin:0; font-size:1.25rem; color:var(--accent)}
+
+.role-page{ padding:3rem; text-align:center }
+.role-card{ display:inline-block; padding:2rem; border-radius:10px; background:#fff; box-shadow:0 8px 40px rgba(2,6,23,0.06)}
+
+.navbar{ display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; border-bottom:1px solid rgba(15,23,42,0.04); background:#fff }
+.navbar .brand h1{ margin:0; font-size:1.1rem; color:var(--accent) }
+.navbar nav a{ margin-left:1rem; color:var(--muted); text-decoration:none }
+.navbar nav a:hover{ color:var(--accent) }
+
+@media (max-width:640px){
+  .auth-container{ padding:1rem; gap:1rem; flex-direction:column }
+  .auth-card{ width:100% }
+}

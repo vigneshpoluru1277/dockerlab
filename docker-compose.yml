@@ -16,7 +16,7 @@ services:
     image: vigneshpoluru1277/dockerr-backendff:latest
     container_name: springbootar
     ports:
-      - "2009:8080"
+      - "2009:8086"
     depends_on:
       - mysqldb   
     restart: on-failure
